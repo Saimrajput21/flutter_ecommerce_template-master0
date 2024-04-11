@@ -10,6 +10,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Profile"),),
       backgroundColor: Color(0xffF9F9F9),
       body: SafeArea(
         top: true,
@@ -21,12 +22,12 @@ class ProfilePage extends StatelessWidget {
               children: <Widget>[
                 CircleAvatar(
                   maxRadius: 48,
-                  backgroundImage: AssetImage('assets/background.jpg'),
+                  backgroundImage: AssetImage('assets/saim.png'),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'Rose Helbert',
+                    'Saim Khalid',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
